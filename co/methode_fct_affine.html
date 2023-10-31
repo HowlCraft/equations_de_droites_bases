@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+		<title>Méthode générale [Fonctions Affines]</title>
+		<meta charset="UTF-8">
+		<meta name="generator" content="SCENARI 6.0.6 / Opale 4.0.5">
+		<meta name="revision" content="2023-10-31 20:42">
+		<link rel="start" href="fonctions_affines.html" title="Fonctions Affines">
+		<meta name="author" content>
+		<meta name="keywords" content>
+		<meta name="date" content>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css">
+		<script>
+/*0*/ var scServices = {id:"loesp9ni"};
+/*1*/ window.scLoadParams = {destUri:"/co/methode_fct_affine.html", pathToRoot:"../"};
+</script>
+		<script src="../lib-sc/scCoLib.js"></script>
+		<script src="../lib-md/w_teMgr/teMgr.js"></script>
+		<script src="../lib-md/w_teMgr/teSubControllers.js"></script>
+		<script src="../lib-sc/scTiLib.js"></script>
+		<script src="../lib-sc/scSiLib.js"></script>
+		<script src="../lib-sc/scPaLib.js"></script>
+		<script src="../lib-sc/scTooltipMgr.js"></script>
+		<script src="../lib-sc/scDynUiMgr.js"></script>
+		<script src="../lib-sc/scMapMgr.js"></script>
+		<script src="../lib-md/s_assmnt.js"></script>
+		<script src="../lib-sc/scDragMgr.js"></script>
+		<script src="../lib-sc/scAssmntMgr.js"></script>
+		<script src="../lib-md/w_mediaelement/mediaelement.min.js"></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js"></script>
+		<script src="../lib-md/w_tePlayer/TESettingsFromTracks.js"></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+		<script src="../lib-md/s_scSearch/scSearch.js"></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js"></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js"></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js"></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+		<script src="../lib-md/w_outMgr/outMgr.js"></script>
+		<script src="../lib-md/w_teMgr/fullscreen-api-polyfill.min.js"></script>
+		<script src="../lib-md/w_teMgr/vtt.min.js"></script>
+		<script src="../lib-md/w_vttTranscript/vttTranscriptMgr.js"></script>
+		<script>
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+vttTranscriptMgr.init()
+</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png">
+		<meta name="robots" content="index,follow">
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+		<script>
+outMgr.declareOutline("fonctions_affines.txt");
+	</script>
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>Fonctions Affines</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>content</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>tools</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Méthode générale</span></h2><div class="hBk_co "><div class="method pBk noTitle"><h3 class="method_ti pBk_ti"><span><i class="type"><span>Method</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="method_co pBk_co"><div class="rBk "><p>On n'a, en fait, pas besoin du dessin (de la droite) pour déterminer l'expression d'une fonction affine : il suffit de deux points, car deux points suffisent pour tracer la droite.</p><p><strong class="txt_emp_is ">Déterminer le coefficient directeur :</strong></p><p>C'est bien simple, on utilise la formule du cours. Il faut se souvenir de mettre les ordonnées/images au numérateur, et de garder le même « sens » au dénominateur et au numérateur.</p></div></div></div><div class="basic pBk noTitle"><h3 class="basic_ti pBk_ti"><span><i class="type"><span>Fundamental</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="basic_co pBk_co"><div class="rBk "><p><span class="txt_mathtex_tl "><span>\(m=\dfrac{y_B-y_A}{x_B-x_A}\)</span></span></p></div></div></div><div class="example pBk noTitle"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Example</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="example_co pBk_co"><div class="rBk "><p>Supposons que l'on sache seulement que la droite de la fonction <span class="txt_mathtex_tl "><span>\(f\)</span></span> passe par les points <span class="txt_mathtex_tl "><span>\(A(4 ;2)\)</span></span> et <span class="txt_mathtex_tl "><span>\(B(1 ;3)\)</span></span>.</p><p>Alors la formule donne : <span class="txt_mathtex_tl "><span>\(m=\dfrac{3-2}{1-4}=\dfrac{1}{-3}=-\dfrac{1}{3}\)</span></span>, et on a trouvé le coefficient directeur.</p></div></div></div><div class="example pBk noTitle"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Example</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="example_co pBk_co"><div class="rBk "><p>Supposons que l'on sache seulement que la droite de la fonction <span class="txt_mathtex_tl "><span>\(g\)</span></span> passe par les points <span class="txt_mathtex_tl "><span>\(A(-2 ;5)\)</span></span> et <span class="txt_mathtex_tl "><span>\(B(1 ;9)\)</span></span>.</p><p>Alors la formule donne : <span class="txt_mathtex_tl "><span>\(m=\dfrac{9-5}{1-(-2)}=\dfrac{4}{3}\)</span></span>, et on a trouvé le coefficient directeur.</p></div></div></div><div class="method pBk noTitle"><h3 class="method_ti pBk_ti"><span><i class="type"><span>Method</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="method_co pBk_co"><div class="rBk "><p><strong class="txt_emp_is ">Déterminer l'ordonnée à l'origine :</strong></p><p>On a besoin du coefficient directeur, et d'un point appartenant à la droite.</p><p>On utilise l'abscisse du point, et on calcule son image de deux façons différentes, ce qui permet de poser une équation.</p></div></div></div><div class="example pBk noTitle"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Example</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="example_co pBk_co"><div class="rBk "><p>Supposons que l'on sache que le coefficient directeur de <span class="txt_mathtex_tl "><span>\(f\)</span></span> est <span class="txt_mathtex_tl "><span>\(2\)</span></span> et que la droite passe par <span class="txt_mathtex_tl "><span>\(A(3 ;5)\)</span></span>.</p><ul class="txt_il "><li class="txt_ili "><p>Comme <span class="txt_mathtex_tl "><span>\(A(3 ;5)\)</span></span>, <span class="txt_mathtex_tl "><span>\(f(3)=5\)</span></span></p></li></ul><ul class="txt_il "><li class="txt_ili "><p>Comme <span class="txt_mathtex_tl "><span>\(m=2\)</span></span>, <span class="txt_mathtex_tl "><span>\(f(x)=2x+p\)</span></span>. Donc <span class="txt_mathtex_tl "><span>\(f(3)=2\times 3 + p = 6+p\)</span></span></p></li></ul><p>Donc <span class="txt_mathtex_tl "><span>\(6+p=5\)</span></span></p><p>Donc <span class="txt_mathtex_tl "><span>\(p=-1\)</span></span></p></div></div></div><div class="example pBk noTitle"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Example</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="example_co pBk_co"><div class="rBk "><p>Supposons que l'on sache que le coefficient directeur de <span class="txt_mathtex_tl "><span>\(g\)</span></span> est <span class="txt_mathtex_tl "><span>\(-3\)</span></span> et que la droite passe par <span class="txt_mathtex_tl "><span>\(A(6 ;1)\)</span></span>.</p><ul class="txt_il "><li class="txt_ili "><p>Comme <span class="txt_mathtex_tl "><span>\(A(6 ;1)\)</span></span>, <span class="txt_mathtex_tl "><span>\(f(6)=1\)</span></span></p></li></ul><ul class="txt_il "><li class="txt_ili "><p>Comme <span class="txt_mathtex_tl "><span>\(m=-3\)</span></span>, <span class="txt_mathtex_tl "><span>\(f(x)=-3x+p\)</span></span>. Donc <span class="txt_mathtex_tl "><span>\(f(6)=-3\times 6 + p = -18+p\)</span></span></p></li></ul><p>Donc <span class="txt_mathtex_tl "><span>\(-18+p=1\)</span></span></p><p>Donc <span class="txt_mathtex_tl "><span>\(p=19\)</span></span></p></div></div></div><div class="advice pBk noTitle"><h3 class="advice_ti pBk_ti"><span><i class="type"><span>Advice</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="advice_co pBk_co"><div class="rBk "><p>On utilise d'abord les coordonnées du point pour choisir le nombre dont on va calculer l'image (dans le deuxième exemple, <span class="txt_mathtex_tl "><span>\(6\)</span></span>).</p><p>Les coordonnées du point donnent son image (dans le deuxième exemple, <span class="txt_mathtex_tl "><span>\(1\)</span></span>).</p><p>Puis on utilise la formule en remplaçant <span class="txt_mathtex_tl "><span>\(x\)</span></span> par le nombre choisi (dans le deuxième exemple, <span class="txt_mathtex_tl "><span>\(6\)</span></span>) , ce qui donne une expression de l'image qui dépend de <span class="txt_mathtex_tl "><span>\(p\)</span></span>.</p><p>On pose ensuite l'équation et on la résout pour trouver <span class="txt_mathtex_tl "><span>\(p\)</span></span>.</p></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" target="_self" href="fonction_affine_methode_expression.html" class="btnNav prev" title="Previous (D&eacute;terminer l'expression d'une fonction sans sa repr&eacute;sentation graphique)"><span>Previous</span></a></li><li><a rel="next" target="_self" href="m1.html" class="btnNav next" title="Next (Quiz: Coefficient directeur 1)"><span>Next</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="main menu" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden"><ul class="mnu static" data-totalPages="23"><li class="sel_no anc_no type_l  dpt_0 intro"><div class="lbl type_l" id="fonctions_affines_1.html"><a href="fonctions_affines_1.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="fonctions_affines_bases.html"><a href="fonctions_affines_bases.html" target="_self" class="item"><span>Bases des fonctions affines</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="fonction_affine_graph.html"><a href="fonction_affine_graph.html" target="_self" class="item"><span>Représentation graphique</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 courseUa"><div class="lbl type_b" id="fonction_affine_methode_expression.html"><a href="fonction_affine_methode_expression.html" target="_self" class="item" type="up"><span>Déterminer l'expression d'une fonction sans sa représentation graphique</span></a></div><ul class="sub mnu_open"><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="methode_fct_affine.html"><span class="item"><span>Méthode générale</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m1.html"><a href="m1.html" target="_self" class="item"><span>Quiz: Coefficient directeur 1</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m2.html"><a href="m2.html" target="_self" class="item"><span>Quiz: Coefficient directeur 2</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m3.html"><a href="m3.html" target="_self" class="item"><span>Quiz: Coefficient directeur 3</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m4.html"><a href="m4.html" target="_self" class="item"><span>Quiz: Coefficient directeur 4</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m5.html"><a href="m5.html" target="_self" class="item"><span>Quiz: Coefficient directeur 5</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 coQuiz"><div class="lbl type_l" id="p1_methode.html"><a href="p1_methode.html" target="_self" class="item"><span>Quiz: Ordonnée à l'origine 1</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="p6.html"><a href="p6.html" target="_self" class="item"><span>Quiz: Ordonnée à l'origine 2</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="p7.html"><a href="p7.html" target="_self" class="item"><span>Quiz: Ordonnée à l'origine 3</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="p8.html"><a href="p8.html" target="_self" class="item"><span>Quiz: Ordonnée à l'origine 4</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 practUc"><div class="lbl type_l" id="methode_exercice.html"><a href="methode_exercice.html" target="_self" class="item"><span>Quiz: Déterminer l'expression algébrique</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 practUc"><div class="lbl type_l" id="methode_exercice2.html"><a href="methode_exercice2.html" target="_self" class="item"><span>Quiz: Déterminer l'expression algébrique</span></a></div></li></ul></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="fonctions_affines.html" target="_self" class="item" type="index" title="Module homepage"><span>Homepage</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden"><span class="legalInfo">
+								
+								<span class="hidden"> | </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.en" target="_blank" class="cc-button" title="Attribution &ndash; Non commercial (new window)"><img alt="Attribution &ndash; Non commercial" width="80" height="15" src="../skin/img/lic/by-nc.png"></a></span><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale/" title="Created with Scenari (new window)"><span><img alt="Created with Scenari (new window)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+		<script src="../skin/js/skin.js"></script>
+		<script type="text/javascript">tplMgr.init();scCodeMgr.init();mathjaxMgr.init();scImageMgr.init();outMgr.init();</script>
+	</body>
+</html>

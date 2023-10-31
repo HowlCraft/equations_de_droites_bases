@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+		<title>Quiz: Ordonnée à l'origine 4 [Fonctions Affines]</title>
+		<meta charset="UTF-8">
+		<meta name="generator" content="SCENARI 6.0.6 / Opale 4.0.5">
+		<meta name="revision" content="2023-10-31 20:42">
+		<link rel="start" href="fonctions_affines.html" title="Fonctions Affines">
+		<meta name="author" content>
+		<meta name="keywords" content>
+		<meta name="date" content>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css">
+		<script>
+/*0*/ var scServices = {id:"loesp9ni"};
+/*1*/ window.scLoadParams = {destUri:"/co/p8.html", pathToRoot:"../"};
+</script>
+		<script src="../lib-sc/scCoLib.js"></script>
+		<script src="../lib-md/w_teMgr/teMgr.js"></script>
+		<script src="../lib-md/w_teMgr/teSubControllers.js"></script>
+		<script src="../lib-sc/scTiLib.js"></script>
+		<script src="../lib-sc/scSiLib.js"></script>
+		<script src="../lib-sc/scPaLib.js"></script>
+		<script src="../lib-sc/scTooltipMgr.js"></script>
+		<script src="../lib-sc/scDynUiMgr.js"></script>
+		<script src="../lib-sc/scMapMgr.js"></script>
+		<script src="../lib-md/s_assmnt.js"></script>
+		<script src="../lib-sc/scDragMgr.js"></script>
+		<script src="../lib-sc/scAssmntMgr.js"></script>
+		<script src="../lib-md/w_mediaelement/mediaelement.min.js"></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js"></script>
+		<script src="../lib-md/w_tePlayer/TESettingsFromTracks.js"></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+		<script src="../lib-md/s_scSearch/scSearch.js"></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js"></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js"></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js"></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+		<script src="../lib-md/w_outMgr/outMgr.js"></script>
+		<script src="../lib-md/w_teMgr/fullscreen-api-polyfill.min.js"></script>
+		<script src="../lib-md/w_teMgr/vtt.min.js"></script>
+		<script src="../lib-md/w_vttTranscript/vttTranscriptMgr.js"></script>
+		<script>
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+vttTranscriptMgr.init()
+</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png">
+		<meta name="robots" content="index,follow">
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+		<script>
+outMgr.declareOutline("fonctions_affines.txt");
+	</script>
+</head>
+	<body class="default module quiz">
+		<div id="root"><header id="header"><h1><span>Fonctions Affines</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>content</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>tools</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk quiz article pair"><h2 class="hBk_ti"><span>Ordonnée à l'origine 4</span></h2><div class="hBk_co"><script>
+var VPq602PJ1QhVnpnEvV0Ihd_Add = {
+
+	fId : "VPq602PJ1QhVnpnEvV0Ihd",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "play" : {
+var vLoadRespSession = "";
+
+	this.fResultDisplay = "none";
+
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"ddLabel_Right","ddLabel_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "ddLabel_Wrong" : "ddLabel_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "ddLabel_Right" : "ddLabel_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+		this.computeScore = function() {
+this.fMinPts = 0;
+			this.fMaxPts = this.fLabels.length;
+			this.fScorePts = 0;
+			for(var i=this.fLabels.length -1; i >=0; i--) {
+			if(this.fLabels[i].sG == this.fLabels[i].rG) this.fScorePts += 1;
+			}
+
+	//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+	if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+		this.refreshScoresFeedbacks();
+this.refreshResult();
+};
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], true);
+		this.load(vLoadRespSession);
+		this.synch();
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+scAssmntMgr.setMode(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_N_"), "visible");
+scAssmntMgr.setMode(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_S_N8d"), false);
+this.fRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, this.fRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, this.fRespSession, "attempt");
+if(this.fRespSession != vLoadRespSession) this.saveResp(this.fRespSession);
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	onActionNb1 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN8d : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+scAssmntMgr.setMode(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_N_score"), "invisible");
+this.refreshResult("none");scAssmntMgr.setMode(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_N_globalExp"), "collapsed");
+for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], true);
+		} else {
+scAssmntMgr.setMode(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_N_score"), "visible");
+this.refreshResult("addClass");scAssmntMgr.setMode(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_N_globalExp"), "visible");
+for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.VPq602PJ1QhVnpnEvV0Ihd_Add_form;
+		switch(this.fCurSeq) {
+case "play" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	saveResp:function(pSession){
+		if(pSession==null) return;
+		var vLabel = this.fLabels[0];
+		var vStr = "[{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		for(var i=1, len=this.fLabels.length; i < len; i++) {
+			vLabel = this.fLabels[i];
+			vStr += ",{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		}
+		vStr+="]";
+		scServices.assmntMgr.setResponse(this.fId, pSession, "pos", vStr);
+	},
+	load:function(pSession){
+		var vStr = (pSession!=null) ? scServices.assmntMgr.getResponse(this.fId, pSession, "pos") : null;
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			for(var j=vGroup.length-1; j >=0; j--) vGroup[j].labelsToAdd = [];
+		}
+		if(vStr) {
+						var vList = eval(vStr);
+			for(var i=0, len=this.fLabels.length; i < len; i++) {
+				var vLabelToAdd = vList[i];
+				vLabelToAdd.label = this.fLabels[i];
+				var vGroupC = this.fGroupsC[vLabelToAdd.g];
+				if(vGroupC.length == 1) vGroupC[0].labelsToAdd[vLabelToAdd.offs] = vLabelToAdd; 
+				else vGroupC[vLabelToAdd.offs].labelsToAdd.push(vLabelToAdd);
+			}
+		} else {
+						var vBasketC = this.fGroupsC[0];
+
+			for(var i=vBasketC.length-1; i >=0; i--) for(var j=0, vLen=vBasketC[i]._Labels.length; j < vLen; j++) vBasketC[i].labelsToAdd.push({label:vBasketC[i]._Labels[j]});
+
+		}
+		scDragMgr.repopulateContainers("VPq602PJ1QhVnpnEvV0Ihd_Add");
+	},
+	synch:function(){
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			var vOffset = 0;
+			for(var j=0, vLenJ=vGroup.length; j < vLenJ; j++) {
+				var vItems = scDragMgr.getLabels(vGroup[j]);
+				var vLenK = vItems.length;
+								if(vLenK == 0) vOffset++;
+				else for(var k=0; k < vLenK; k++) {
+					vItems[k].rG = i;
+					vItems[k].rO = vOffset++;
+				}
+			}
+		}
+	},
+	onLoad: function(){
+	try{
+		var onChange = function() {
+VPq602PJ1QhVnpnEvV0Ihd_Add.synch();
+VPq602PJ1QhVnpnEvV0Ihd_Add.computeScore();
+VPq602PJ1QhVnpnEvV0Ihd_Add.saveResp(VPq602PJ1QhVnpnEvV0Ihd_Add.fRespSession);
+			scServices.assmntMgr.commit();
+		}
+		this.fLabels = [];
+		var vLabel, vC;
+scDragMgr.makeContainer("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_S_N4c"), vC = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_S_N4e"), sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_S_N59")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddBasketDragOver');
+vLabel = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_LN1a");
+		this.fLabels.push(vLabel);
+		vLabel.sO=0;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("VPq602PJ1QhVnpnEvV0Ihd_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_LN2c");
+		this.fLabels.push(vLabel);
+		vLabel.sO=0;
+vLabel.sG=2;
+scDragMgr.makeDraggableLabel("VPq602PJ1QhVnpnEvV0Ihd_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_LN3e");
+		this.fLabels.push(vLabel);
+		vLabel.sO=0;
+vLabel.sG=3;
+scDragMgr.makeDraggableLabel("VPq602PJ1QhVnpnEvV0Ihd_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_LN50");
+		this.fLabels.push(vLabel);
+		vLabel.sO=0;
+vLabel.sG=4;
+scDragMgr.makeDraggableLabel("VPq602PJ1QhVnpnEvV0Ihd_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_LN62");
+		this.fLabels.push(vLabel);
+		vLabel.sO=0;
+vLabel.sG=5;
+scDragMgr.makeDraggableLabel("VPq602PJ1QhVnpnEvV0Ihd_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_LN74");
+		this.fLabels.push(vLabel);
+		vLabel.sO=0;
+vLabel.sG=6;
+scDragMgr.makeDraggableLabel("VPq602PJ1QhVnpnEvV0Ihd_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+scDragMgr.makeContainer("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_Nf"), vC = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_Nf"), sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_Nf")).setMode(vC, 'append', 1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N21"), vC = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N21"), sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N21")).setMode(vC, 'append', 1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N33"), vC = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N33"), sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N33")).setMode(vC, 'append', 1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N45"), vC = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N45"), sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N45")).setMode(vC, 'append', 1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N57"), vC = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N57"), sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N57")).setMode(vC, 'append', 1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N69"), vC = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N69"), sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N69")).setMode(vC, 'append', 1).setDragOverClass(vC, 'ddCatchDragOver');
+this.fGroupsC = [scDragMgr.getContainers("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_L")),scDragMgr.getContainers("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_RNf")),scDragMgr.getContainers("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_RN21")),scDragMgr.getContainers("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_RN33")),scDragMgr.getContainers("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_RN45")),scDragMgr.getContainers("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_RN57")),scDragMgr.getContainers("VPq602PJ1QhVnpnEvV0Ihd_Add", sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_RN69"))];
+		for(var i = this.fGroupsC[0].length-1; i >=0; i--) this.fGroupsC[0][i]._Labels = scDragMgr.getLabels(this.fGroupsC[0][i]);
+		this.initSeq(this.getOnLoadSeq()); 
+		scAssmntMgr.setMode(sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_A"));
+	}catch(e){console.log(e);}
+	},
+
+	onUnload: function(){
+		this.closeSeq();
+	},
+	refreshScoresFeedbacks : function(){
+
+		var vScoreNode = sc$("VPq602PJ1QhVnpnEvV0Ihd_Add_SNd0");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Good answer<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% of right answers<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% of right answers<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Wrong answer <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = VPq602PJ1QhVnpnEvV0Ihd_Add;
+scOnUnloads[scOnUnloads.length] = VPq602PJ1QhVnpnEvV0Ihd_Add;
+</script><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Associer les ordonnées à l'origine avec les bonnes données</p></div></div><div class="response" aria-live="polite"><table id="VPq602PJ1QhVnpnEvV0Ihd_Add_N_" class="pairTable"><tr><td class="mtTdBasket"><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_L" class="ddBasket "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_S_N4c" class="ddBasketCatch "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_S_N4e" class="ddBasketCont "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_LN3e" class="mtLabel "><p><span class="txt_mathtex_tl "><span>\(p=14\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_LN50" class="mtLabel "><p><span class="txt_mathtex_tl "><span>\(p=200\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_LN74" class="mtLabel "><p><span class="txt_mathtex_tl "><span>\(p=-2\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_LN2c" class="mtLabel "><p><span class="txt_mathtex_tl "><span>\(p=-16\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_LN62" class="mtLabel "><p><span class="txt_mathtex_tl "><span>\(p=1\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_LN1a" class="mtLabel "><p><span class="txt_mathtex_tl "><span>\(p=17\)</span></span></p></div></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_S_N59" class="ddBasketIfEmpty "><span>No more elements to pair</span></div><div class="ddBasketEnd"></div></div></div></td><td class="mtTdArrow"></td><td class="mtTdDropCont"><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_RNf" class="ddRepArea "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_Nf" class="ddDropCatch "><div class="ddDropTi"><p><span class="txt_mathtex_tl "><span>\(m=1\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(3)=20\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_Nf" class="ddDropCont "></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_Nf" class="ddDropContIfEmpty "><span>Drop here</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_RN21" class="ddRepArea "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N21" class="ddDropCatch "><div class="ddDropTi"><p><span class="txt_mathtex_tl "><span>\(m=3\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(6)=2\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N21" class="ddDropCont "></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N21" class="ddDropContIfEmpty "><span>Drop here</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_RN33" class="ddRepArea "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N33" class="ddDropCatch "><div class="ddDropTi"><p><span class="txt_mathtex_tl "><span>\(m=-2\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(2)=10\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N33" class="ddDropCont "></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N33" class="ddDropContIfEmpty "><span>Drop here</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_RN45" class="ddRepArea "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N45" class="ddDropCatch "><div class="ddDropTi"><p><span class="txt_mathtex_tl "><span>\(m=-1\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(100)=100\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N45" class="ddDropCont "></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N45" class="ddDropContIfEmpty "><span>Drop here</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_RN57" class="ddRepArea "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N57" class="ddDropCatch "><div class="ddDropTi"><p><span class="txt_mathtex_tl "><span>\(m=0,5\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(5)=3,5\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N57" class="ddDropCont "></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N57" class="ddDropContIfEmpty "><span>Drop here</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_RN69" class="ddRepArea "><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN6c_N69" class="ddDropCatch "><div class="ddDropTi"><p><span class="txt_mathtex_tl "><span>\(m=1,5\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(6)=7\)</span></span></p></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN73_N69" class="ddDropCont "></div><div id="VPq602PJ1QhVnpnEvV0Ihd_Add_NN75_N69" class="ddDropContIfEmpty "><span>Drop here</span></div><div class="ddCatchDragEnd"></div></div></div></td></tr></table></div><div class="globalExp " id="VPq602PJ1QhVnpnEvV0Ihd_Add_N_globalExp" aria-live="polite"><div class="rBk "><ol class="txt_ol "><li class="txt_oli "><p><span class="txt_mathtex_tl "><span>\(m=1\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(3)=20\)</span></span></p><p><span class="txt_mathtex_tl "><span>\(f(3)=1\times 3+p=3+p\)</span></span>, donc <span class="txt_mathtex_tl "><span>\(3+p=30 \Longleftrightarrow p=17\)</span></span></p></li><li class="txt_oli "><p><span class="txt_mathtex_tl "><span>\(m=3\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(6)=2\)</span></span></p><p><span class="txt_mathtex_tl "><span>\(f(6)=3\times 6+p=18+p\)</span></span>, donc <span class="txt_mathtex_tl "><span>\(18+p=2 \Longleftrightarrow p=-16\)</span></span></p></li><li class="txt_oli "><p><span class="txt_mathtex_tl "><span>\(m=-2\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(2)=10\)</span></span></p><p><span class="txt_mathtex_tl "><span>\(f(2)=-2\times2+p=-4+p\)</span></span>, donc <span class="txt_mathtex_tl "><span>\(-4+p=10 \Longleftrightarrow p=14\)</span></span></p></li><li class="txt_oli "><p><span class="txt_mathtex_tl "><span>\(m=-1\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(100)=100\)</span></span></p><p><span class="txt_mathtex_tl "><span>\(f(100)=-1\times 100+p=-100+p\)</span></span>, donc <span class="txt_mathtex_tl "><span>\(-100+p=100 \Longleftrightarrow p=200\)</span></span></p></li><li class="txt_oli "><p><span class="txt_mathtex_tl "><span>\(m=0,5\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(5)=3,5\)</span></span></p><p><span class="txt_mathtex_tl "><span>\(f(5)=0,5\times 5 +p = 2,5+p\)</span></span>, donc <span class="txt_mathtex_tl "><span>\(2,5+p=3,5 \Longleftrightarrow p=1\)</span></span></p></li><li class="txt_oli "><p><span class="txt_mathtex_tl "><span>\(m=1,5\)</span></span> et <span class="txt_mathtex_tl "><span>\(f(6)=7\)</span></span></p><p><span class="txt_mathtex_tl "><span>\(f(6)=1,5\times 6+p=9+p\)</span></span>, donc <span class="txt_mathtex_tl "><span>\(9+p=7 \Longleftrightarrow p=-2\)</span></span></p></li></ol></div></div><div class="toolbar"><a role="button" title="Show score and solution" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="VPq602PJ1QhVnpnEvV0Ihd_Add.onActionN8d(this); return false;" class="btnQuiz correction " id="VPq602PJ1QhVnpnEvV0Ihd_Add_S_N8d" aria-controls="VPq602PJ1QhVnpnEvV0Ihd_Add_N_score VPq602PJ1QhVnpnEvV0Ihd_Add_N_globalExp"><span>Correction</span></a><a role="button" title="Erase the answers" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="VPq602PJ1QhVnpnEvV0Ihd_Add.onActionNb1(this); return false;" class="btnQuiz reset "><span>Restart</span></a><span class="scoreBox"><span class="score " aria-live="polite" id="VPq602PJ1QhVnpnEvV0Ihd_Add_N_score"><span id="VPq602PJ1QhVnpnEvV0Ihd_Add_SNd0"><span></span></span></span></span></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" target="_self" href="p7.html" class="btnNav prev" title="Previous (Quiz: Ordonn&eacute;e &agrave; l'origine 3)"><span>Previous</span></a></li><li><a rel="next" target="_self" href="methode_exercice.html" class="btnNav next" title="Next (D&eacute;terminer l'expression alg&eacute;brique)"><span>Next</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="main menu" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden"><ul class="mnu static" data-totalPages="23"><li class="sel_no anc_no type_l  dpt_0 intro"><div class="lbl type_l" id="fonctions_affines_1.html"><a href="fonctions_affines_1.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="fonctions_affines_bases.html"><a href="fonctions_affines_bases.html" target="_self" class="item"><span>Bases des fonctions affines</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="fonction_affine_graph.html"><a href="fonction_affine_graph.html" target="_self" class="item"><span>Représentation graphique</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 courseUa"><div class="lbl type_b" id="fonction_affine_methode_expression.html"><a href="fonction_affine_methode_expression.html" target="_self" class="item" type="up"><span>Déterminer l'expression d'une fonction sans sa représentation graphique</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="methode_fct_affine.html"><a href="methode_fct_affine.html" target="_self" class="item"><span>Méthode générale</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m1.html"><a href="m1.html" target="_self" class="item"><span>Quiz: Coefficient directeur 1</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m2.html"><a href="m2.html" target="_self" class="item"><span>Quiz: Coefficient directeur 2</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m3.html"><a href="m3.html" target="_self" class="item"><span>Quiz: Coefficient directeur 3</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m4.html"><a href="m4.html" target="_self" class="item"><span>Quiz: Coefficient directeur 4</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="m5.html"><a href="m5.html" target="_self" class="item"><span>Quiz: Coefficient directeur 5</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 coQuiz"><div class="lbl type_l" id="p1_methode.html"><a href="p1_methode.html" target="_self" class="item"><span>Quiz: Ordonnée à l'origine 1</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="p6.html"><a href="p6.html" target="_self" class="item"><span>Quiz: Ordonnée à l'origine 2</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="p7.html"><a href="p7.html" target="_self" class="item"><span>Quiz: Ordonnée à l'origine 3</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="p8.html"><span class="item"><span>Quiz: Ordonnée à l'origine 4</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 practUc"><div class="lbl type_l" id="methode_exercice.html"><a href="methode_exercice.html" target="_self" class="item"><span>Quiz: Déterminer l'expression algébrique</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 practUc"><div class="lbl type_l" id="methode_exercice2.html"><a href="methode_exercice2.html" target="_self" class="item"><span>Quiz: Déterminer l'expression algébrique</span></a></div></li></ul></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="fonctions_affines.html" target="_self" class="item" type="index" title="Module homepage"><span>Homepage</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale/" title="Created with Scenari (new window)"><span><img alt="Created with Scenari (new window)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+		<script src="../skin/js/skin.js"></script>
+		<script type="text/javascript">tplMgr.init();scCodeMgr.init();mathjaxMgr.init();scImageMgr.init();outMgr.init();</script>
+	</body>
+</html>
